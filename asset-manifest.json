@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/SoQu-PJ/Drum-Machine/static/css/main.073c9b0a.css",
-    "main.js": "/SoQu-PJ/Drum-Machine/static/js/main.d1cbe513.js",
+    "main.css": "/SoQu-PJ/Drum-Machine/static/css/main.7ac071e1.css",
+    "main.js": "/SoQu-PJ/Drum-Machine/static/js/main.64e66aec.js",
     "static/js/787.c419f7a1.chunk.js": "/SoQu-PJ/Drum-Machine/static/js/787.c419f7a1.chunk.js",
-    "static/media/logo.svg": "/SoQu-PJ/Drum-Machine/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/SoQu-PJ/Drum-Machine/index.html",
-    "main.073c9b0a.css.map": "/SoQu-PJ/Drum-Machine/static/css/main.073c9b0a.css.map",
-    "main.d1cbe513.js.map": "/SoQu-PJ/Drum-Machine/static/js/main.d1cbe513.js.map",
+    "main.7ac071e1.css.map": "/SoQu-PJ/Drum-Machine/static/css/main.7ac071e1.css.map",
+    "main.64e66aec.js.map": "/SoQu-PJ/Drum-Machine/static/js/main.64e66aec.js.map",
     "787.c419f7a1.chunk.js.map": "/SoQu-PJ/Drum-Machine/static/js/787.c419f7a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.d1cbe513.js"
+    "static/css/main.7ac071e1.css",
+    "static/js/main.64e66aec.js"
   ]
 }
