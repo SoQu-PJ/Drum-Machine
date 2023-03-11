@@ -1,3 +1,4 @@
+/* variable */
 :root {
   --bg-body-color: rgb(141, 141, 141);
 
@@ -28,6 +29,8 @@ body {
   border: 0.5rem solid var(--border-drum-machine-color);
 }
 
+/* button section start */
+
 .sound-button {
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
@@ -49,3 +52,5 @@ body {
 .drum-pad:hover {
   transform: translate(0, -0.5rem);
 }
+
+/* button section end */

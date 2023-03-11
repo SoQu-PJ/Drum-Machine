@@ -4,7 +4,9 @@ import '../App.css';
 
 const SoundPanel = props => {
     return(
-        <section className="sound-panel"></section>
+        <section className="sound-panel">
+        
+        </section>
     )
 }
 
