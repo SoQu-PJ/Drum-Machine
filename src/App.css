@@ -52,7 +52,7 @@ body {
   transition: 0.5s;
 }
 
-.drum-pad:hover {
+.drum-pad:hover:not(:disabled) {
   transform: translate(0, -0.5rem);
 }
 
