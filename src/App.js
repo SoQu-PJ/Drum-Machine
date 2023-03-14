@@ -4,13 +4,14 @@ import Buttons from './Components/Buttons';
 import SoundPanel from './Components/SoundPanel';
 
 function App() {
+  const [monitorValue, setMonitorValue] = useState("");
   const [power, setPower] = useState(true);
+  const [volume, setVolume] = useState(0.5);
 
   return (
     <main id="drum-machine">
-      {/* <div id="display"></div> */}
-      <Buttons power={power}/>
-      <SoundPanel power={power} setPower={setPower}/>
+      <Buttons power={power} volume={volume} setMonitorValue={setMonitorValue}/>
+      <SoundPanel power={power} setPower={setPower} volume={volume} setVolume={setVolume} monitorValue={monitorValue} setMonitorValue={setMonitorValue}/>
     </main>
   );
 }

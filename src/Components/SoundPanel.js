@@ -1,14 +1,11 @@
-import React, {useState} from "react";
+import React from "react";
 import '../App.css';
 
 
 const SoundPanel = props => {
-    const [monitorValue, setMonitorValue] = useState("");
-    const [volume, setVolume] = useState(50); 
-
     const volumeHandler = e =>{
-        setVolume(e.target.value);
-        setMonitorValue(`Volume: ${volume}`);
+        props.setVolume(e.target.value);
+        props.setMonitorValue(`Volume: ${props.volume}`);
     }
 
     const powerHandler = e => {
@@ -23,11 +20,11 @@ const SoundPanel = props => {
                 <span className="slider round"></span>
             </label>
             
-            <div className="monitor">{props.power ? monitorValue : ""}</div>
+            <div id="display" className="monitor">{props.power ? props.monitorValue : ""}</div>
 
             <div className="sound-volume-box">
                 <h4>Volume</h4>
-                <input className="sound-volume" type="range" min="0" max="100" value={volume} onChange={volumeHandler} disabled={!props.power}/>
+                <input className="sound-volume" type="range" min="0" max="1.0" step="0.1" value={props.volume} onChange={volumeHandler} disabled={!props.power}/>
             </div>
         </section>
     )

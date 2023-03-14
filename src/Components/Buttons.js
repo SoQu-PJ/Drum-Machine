@@ -1,27 +1,46 @@
 import React, {useEffect} from "react";
-import {Howl, Howler} from 'howler';
+import {Howl} from 'howler';
 import "../App.css";
 import sound from "./sound.json";
-// import sound1 from "../Sound/Heater-1.mp3";
+
+import Q from "../Sound/Heater-1.mp3";
+import W from "../Sound/Heater-2.mp3";
+import E from "../Sound/Heater-3.mp3";
+import A from "../Sound/Heater-4_1.mp3";
+import S from "../Sound/Heater-6.mp3";
+import D from "../Sound/Dsc_Oh.mp3";
+import Z from "../Sound/Kick_n_Hat.mp3";
+import X from "../Sound/RP4_KICK_1.mp3";
+import C from "../Sound/Cev_H2.mp3";
 
 
 const Buttons = props => {
-
-    // allButtons.forEach(el => el.disabled = !props.power);
-
     const buttonHandler = e =>{
-        // for(const property in sound){
-        //     if(e.target.id === property){
-        //         const audio = new Howl({
-        //             src: [import("../Sound/Heater-1.mp3")],
-        //             html5: true,
-        //             volume: 1.0
-        //         });
-                  
-        //         audio.play();
-        //     }
-                
-        // }
+        const target = e.target.id;
+        const songArray = {
+            "Q": Q,
+            "W": W,
+            "E": E,
+            "A": A,
+            "S": S,
+            "D": D,
+            "Z": Z,
+            "X": X,
+            "C": C
+        }
+
+        
+        for(const property in sound){
+            if(target === property){
+                const audio = new Howl({
+                    src: [songArray[target]],
+                    volume: props.volume
+                });
+                audio.play();
+            }
+        }
+
+        props.setMonitorValue(sound[target]);
     }
     
     useEffect(()=>{
