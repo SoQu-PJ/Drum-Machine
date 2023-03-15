@@ -260,7 +260,12 @@ input:checked+.slider:before {
   justify-content: center;
 }
 
-
-
-
 /* sound panel section end */
+
+/* responsive web design */
+
+/* @media (max-width: 576px) {
+  #drum-machine {
+    grid-template: repeat(2, 1fr) / 1fr;
+  }
+} */

@@ -1,5 +1,4 @@
 import React, {useEffect} from "react";
-import {Howl} from 'howler';
 import "../App.css";
 import sound from "./sound.json";
 
@@ -15,57 +14,78 @@ import C from "../Sound/Cev_H2.mp3";
 
 
 const Buttons = props => {
-    const buttonHandler = e =>{
-        const target = e.target.id;
-        const songArray = {
-            "Q": Q,
-            "W": W,
-            "E": E,
-            "A": A,
-            "S": S,
-            "D": D,
-            "Z": Z,
-            "X": X,
-            "C": C
-        }
-
-        
+    const buttonHandler = e =>{ 
         for(const property in sound){
-            if(target === property){
-                const audio = new Howl({
-                    src: [songArray[target]],
-                    volume: props.volume
-                });
-                audio.play();
+            if(e.target.id === property){
+                e.target.children[0].play()
             }
         }
 
-        props.setMonitorValue(sound[target]);
+        props.setMonitorValue(sound[e.target.id]);
     }
     
     useEffect(()=>{
         const allButtons = document.querySelectorAll(".drum-pad");
+        const audio = document.querySelectorAll(".audio-control");
 
         allButtons.forEach(el => {
             el.disabled = !props.power;
 
-
             el.addEventListener("click", buttonHandler);
             return () => el.removeEventListener("click", buttonHandler);
         })
+
+        audio.forEach(el => el.volume = props.volume / 100);
     });
 
     return(
     <section className="sound-button">
-        <button id="Q" className="drum-pad">Q</button>
-        <button id="W" className="drum-pad">W</button>
-        <button id="E" className="drum-pad">E</button>
-        <button id="A" className="drum-pad">A</button>
-        <button id="S" className="drum-pad">S</button>
-        <button id="D" className="drum-pad">D</button>
-        <button id="Z" className="drum-pad">Z</button>
-        <button id="X" className="drum-pad">X</button>
-        <button id="C" className="drum-pad">C</button>
+        <button id="Q" className="drum-pad">
+        <audio className="audio-control">
+            <source src={Q}></source>
+        </audio>
+        Q
+        </button>
+        <button id="W" className="drum-pad">
+        <audio className="audio-control">
+            <source src={W}></source>
+        </audio>
+        W</button>
+        <button id="E" className="drum-pad">
+        <audio className="audio-control">
+            <source src={E}></source>
+        </audio>
+        E</button>
+        <button id="A" className="drum-pad">
+        <audio className="audio-control">
+            <source src={A}></source>
+        </audio>
+        A</button>
+        <button id="S" className="drum-pad">
+        <audio className="audio-control">
+            <source src={S}></source>
+        </audio>
+        S</button>
+        <button id="D" className="drum-pad">
+        <audio className="audio-control">
+            <source src={D}></source>
+        </audio>
+        D</button>
+        <button id="Z" className="drum-pad">
+        <audio className="audio-control">
+            <source src={Z}></source>
+        </audio>
+        Z</button>
+        <button id="X" className="drum-pad">
+        <audio className="audio-control">
+            <source src={X}></source>
+        </audio>
+        X</button>
+        <button id="C" className="drum-pad">
+        <audio className="audio-control">
+            <source src={C}></source>
+        </audio>
+        C</button>
     </section>
     )
 }

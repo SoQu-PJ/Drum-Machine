@@ -6,6 +6,7 @@ const SoundPanel = props => {
     const volumeHandler = e =>{
         props.setVolume(e.target.value);
         props.setMonitorValue(`Volume: ${props.volume}`);
+        
     }
 
     const powerHandler = e => {
@@ -24,7 +25,7 @@ const SoundPanel = props => {
 
             <div className="sound-volume-box">
                 <h4>Volume</h4>
-                <input className="sound-volume" type="range" min="0" max="1.0" step="0.1" value={props.volume} onChange={volumeHandler} disabled={!props.power}/>
+                <input className="sound-volume" type="range" min="0" max="100" value={props.volume} onChange={volumeHandler} disabled={!props.power}/>
             </div>
         </section>
     )
