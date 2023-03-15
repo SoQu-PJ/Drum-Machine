@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "17ab2a48eaafe19f725f",
-    "url": "/Drum-Machine/static/css/main.0ea5ea34.chunk.css"
+    "revision": "1fcebd2003aa8ec31d7a",
+    "url": "/Drum-Machine/static/css/main.0dfc07e3.chunk.css"
   },
   {
-    "revision": "17ab2a48eaafe19f725f",
-    "url": "/Drum-Machine/static/js/main.17ab2a48.chunk.js"
+    "revision": "1fcebd2003aa8ec31d7a",
+    "url": "/Drum-Machine/static/js/main.1fcebd20.chunk.js"
   },
   {
-    "revision": "205849d973eaa941ab0f",
-    "url": "/Drum-Machine/static/js/1.205849d9.chunk.js"
+    "revision": "2e76ef4f4b07ab805959",
+    "url": "/Drum-Machine/static/js/1.2e76ef4f.chunk.js"
   },
   {
-    "revision": "fd44b75b4d1b65811278",
-    "url": "/Drum-Machine/static/js/2.fd44b75b.chunk.js"
+    "revision": "0ba8e2ee584363f3d5ce",
+    "url": "/Drum-Machine/static/js/2.0ba8e2ee.chunk.js"
   },
   {
-    "revision": "9b21a43be996c5105a59",
-    "url": "/Drum-Machine/static/js/runtime~main.9b21a43b.js"
+    "revision": "ee923a9409ebbac9b415",
+    "url": "/Drum-Machine/static/js/runtime~main.ee923a94.js"
   },
   {
     "revision": "b1cfea05e9aeb27be5b041e40c1ca80f",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/Drum-Machine/static/media/Cev_H2.34d1150f.mp3"
   },
   {
-    "revision": "8d54f333a57c212de6846bc5aa0cd18a",
+    "revision": "925fb84f93edd6cb284ba6580f2c286a",
     "url": "/Drum-Machine/index.html"
   }
 ];
