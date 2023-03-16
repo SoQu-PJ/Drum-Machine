@@ -11,6 +11,9 @@ const SoundPanel = props => {
 
     const powerHandler = e => {
         document.querySelector(".power").checked ? props.setPower(true) : props.setPower(false);
+        
+        if(props.power)
+            props.setMonitorValue("");
     }
 
     return(

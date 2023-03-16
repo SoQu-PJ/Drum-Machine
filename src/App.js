@@ -6,7 +6,7 @@ import SoundPanel from './Components/SoundPanel';
 function App() {
   const [monitorValue, setMonitorValue] = useState("");
   const [power, setPower] = useState(true);
-  const [volume, setVolume] = useState(0.5);
+  const [volume, setVolume] = useState(50);
 
   return (
     <main id="drum-machine">
